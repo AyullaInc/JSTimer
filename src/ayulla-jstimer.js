@@ -55,7 +55,7 @@
         setProperties();
         initTimer();
         setInterval(updateMinutes, 60000);
-        setInterval(updateSeconds, 100)
+        setInterval(updateSeconds, 1000)
     }
 
     //private functiom to allocate timing
