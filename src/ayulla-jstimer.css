@@ -1,0 +1,35 @@
+#first-set {
+    font-weight: 100;
+    font-size: 85px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+#second-set {
+    font-weight: 100;
+    font-size: 57px;
+    margin-top: 29px;
+    margin-bottom: 0px;
+}
+
+#first-set-tile {
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: -7px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#second-set-tile {
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#styled-as-colon {
+    font-weight: 100;
+    font-size: 85px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

@@ -16,14 +16,6 @@
             removePadding   : false,
             addPadding      : 20,
             margin          : 0,
-            majorTimePixel  : 85,
-            minorTimePixel  : 57,
-            majorLabelPixel : 20,
-            minorLabelPixel : 20,
-            majorTimeMargin : 0,
-            minorTimeMargin : 29,
-            majorLabelMargin: -4,
-            minorLabelMargin: 0,
         }, options);
 
         if (settings.totalTime == 0) {
@@ -52,7 +44,6 @@
         calculateTimes (totalTime);
         var toAppend = getToAppend();
         this.html(toAppend);
-        setProperties();
         initTimer();
         setInterval(updateMinutes, 60000);
         setInterval(updateSeconds, 1000)
@@ -244,45 +235,6 @@
             $("#second-set").text("00");
             $("#second-set-tile").text("SECONDS");
         }
-    }
-
-    //private function to set properties
-    function setProperties() {
-        $('#first-set').css({
-            'font-weight'       : '100',
-            'font-size'         : settings.majorTimePixel.toString() + 'px',
-            'margin-top'        : settings.majorTimeMargin.toString() + 'px',
-            'margin-bottom'     : '0px'
-        });
-
-        $('#second-set').css({
-            'font-weight'       : '100',
-            'font-size'         : settings.minorTimePixel.toString() + 'px',
-            'margin-top'        : settings.minorTimeMargin.toString() + 'px',
-            'margin-bottom'     : '0px'
-        });
-
-        $('#first-set-tile').css({
-            'font-weight'       : '200',
-            'font-size'         : settings.majorLabelPixel.toString() + 'px',
-            'margin-top'        : settings.majorLabelMargin.toString() + 'px',
-            'margin-bottom'     : '0px',
-            'text-align'        : 'center'
-        });
-
-        $('#second-set-tile').css({
-            'font-weight'       : '200',
-            'font-size'         : settings.minorLabelPixel.toString() + 'px',
-            'margin-top'        : settings.minorLabelMargin.toString() + 'px',
-            'margin-bottom'     : '0px'
-        });
-
-        $('#styled-as-colon').css({
-            'font-weight'       : '100',
-            'font-size'         : settings.majorTimePixel.toString() + 'px',
-            'margin-top'        : '0px',
-            'margin-bottom'     : '0px'
-        });
     }
 
 }(jQuery));
